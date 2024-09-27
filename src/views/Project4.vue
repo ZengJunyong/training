@@ -162,6 +162,7 @@ onMounted(function () {
 </script>
 <template>
   <div id="app">
+    <br>
     <button id="update-locale">Switch to yearly</button>
     <div class="form-wrapper">
       <section class="rebilly-instruments-summary"></section>

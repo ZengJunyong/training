@@ -15,6 +15,7 @@ import { RouterLink, RouterView } from 'vue-router'
         <RouterLink to="/project6">Project 6</RouterLink>
         <RouterLink to="/project7">Project 7</RouterLink>
         <RouterLink to="/project8">Project 8</RouterLink>
+        <RouterLink to="/debriefs" style="color: white;background: black; font-weight: bold; padding: 6px 12px;border-radius: 4px;">Debriefs</RouterLink>
       </nav>
     </div>
   </header>
@@ -58,7 +59,7 @@ nav a:first-of-type {
   border: 0;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 2048px) {
   header {
     display: flex;
     place-items: center;
