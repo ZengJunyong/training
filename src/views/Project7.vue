@@ -27,7 +27,13 @@ function pay(invoice){
 
 <template>
   <h1>Invoices training</h1>
-  <table>
+  <table style="width: 100%;">
+    <tr>
+      <th>issuedTime</th>
+      <th>status</th>
+      <th>amountDue</th>
+      <th>action</th>
+    </tr>
     <tr v-for="invoice in invoices">
       <td> {{invoice.fields.issuedTime}}</td>
       <td> {{invoice.fields.status}}</td>

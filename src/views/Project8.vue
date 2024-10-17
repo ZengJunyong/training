@@ -12,7 +12,7 @@ onMounted(function (){
       },
     },
     features: {
-      showConsentCheck: ['form', 'confirmation'],
+      showConsentCheck: ['form', 'confirmation'], // looks like this option is deprecated.
     },
     publishableKey: 'pk_sandbox_qB59oAh9XShdwFBwIr9xEfUFgAhsnDkvCgA8M5_',
     organizationId: 'phronesis---summitvilla',
