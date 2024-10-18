@@ -35,6 +35,26 @@ const router = createRouter({
       component: () => import('../views/Project8.vue')
     },
     {
+      path: '/project9',
+      name: 'project9',
+      component: () => import('../views/Project9.vue')
+    },
+    {
+      path: '/project9-product-page',
+      name: 'project9-product-page',
+      component: () => import('../views/Project9ProductPage.vue')
+    },
+    {
+      path: '/project10',
+      name: 'project10',
+      component: () => import('../views/Project10.vue')
+    },
+    {
+      path: '/project11',
+      name: 'project11',
+      component: () => import('../views/Project11.vue')
+    },
+    {
       path: '/debriefs',
       name: 'debriefs',
       component: () => import('../views/Debriefs.vue')
