@@ -32,7 +32,6 @@ const customerId = "cus_01HMW4HF2QMJZ3EJKEQ7T04TFQ";
   });
 
 
-
 })();
 
 async function swtichToUSD() {
@@ -88,9 +87,9 @@ async function swtichToCAD() {
 <template>
   <h1>Casino deposit page with strategies (USD and CAD)</h1>
   <img src="https://funkytravel.ro/wp-content/uploads/2023/12/casino.jpeg" alt="">
-  <div>
-  <button @click="swtichToUSD()">USD</button>
-  <button @click="swtichToCAD()">CAD</button>
+  <div style="padding: 40px 0 20px 0">
+    <button style="margin-right: 20px;" @click="swtichToUSD()">USD</button>
+    <button @click="swtichToCAD()">CAD</button>
   </div>
   <div class="container2">
     <div class="form-wrapper">
@@ -101,7 +100,7 @@ async function swtichToCAD() {
 </template>
 
 <style scoped>
-.container2{
+.container2 {
   color: white;
 }
 </style>
