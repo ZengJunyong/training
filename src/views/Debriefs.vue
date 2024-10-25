@@ -89,6 +89,24 @@
       </p>
     </li>
   </ul>
+  <h3>Project 12</h3>
+  <ul>
+    <li>
+      Which teammates executed the project?
+      <p>Bogdan Litsenberger, Junyong Zeng</p>
+    </li>
+    <li>
+      What made you smile?
+      <p>It seems this training is similar with project 6, we reused the most of the code in project 6</p>
+    </li>
+    <li>
+      What did you find confusing? Did you encounter any issues?
+      <p>There was an issue with CAD input field in instruments looking squashed when you clear it and re-enter the amount manually<br>
+        <img src="../assets/p12-bug.png" alt="">
+      </p>
+	  <p>Another issue is when you make a deposit transaction and then update Rebilly Instruments without refreshing the page, it causes an error saying that transaction was already completed. We had to destroy Rebilly Instruments instance and mount it again to allow making multiple deposits without refreshing a page.</p>
+    </li>
+  </ul>
 </template>
 <style scoped>
 h3, ul {
