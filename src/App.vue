@@ -4,21 +4,13 @@ import { RouterLink, RouterView } from 'vue-router'
 
 <template>
   <header>
-    <h1>Training</h1>
+    <h1>Phronesis training</h1>
 
     <div class="wrapper">
 
       <nav>
-        <RouterLink to="/">Project 3</RouterLink>
-        <RouterLink to="/project4">Project 4</RouterLink>
-        <RouterLink to="/project5">Project 5</RouterLink>
-        <RouterLink to="/project6">Project 6</RouterLink>
-        <RouterLink to="/project7">Project 7</RouterLink>
-        <RouterLink to="/project8">Project 8</RouterLink>
-        <RouterLink to="/project9">Project 9</RouterLink>
-        <RouterLink to="/project10">Project 10</RouterLink>
-        <RouterLink to="/project11">Project 11</RouterLink>
-        <RouterLink to="/project12">Project 12</RouterLink>
+        <RouterLink to="/project14">Home</RouterLink>
+        <RouterLink to="/project14">Project 14</RouterLink>
         <RouterLink to="/debriefs" style="color: white;background: black; font-weight: bold; padding: 6px 12px;border-radius: 4px;">Debriefs</RouterLink>
       </nav>
     </div>

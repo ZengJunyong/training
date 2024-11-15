@@ -1,110 +1,76 @@
 <template>
-  <h3>Project 8</h3>
+  <h3>Project 14</h3>
   <ul>
     <li>
-      Which teammates executed the project?
-      <p>Bogdan Litsenberger, Junyong Zeng</p>
+      What made you smile?
+      <p>This project was very easy to complete.</p>
     </li>
+    <li>
+      What did you find confusing? Did you encounter any issues?
+      <ul>
+        <li>
+          The "DCC offer accepted" timeline message (and other DCC-related messages) doesn't show the markup that's shown in "DCC" hover-window.
+        </li>
+        <img src="/src/assets/p14-1.png" alt="">
+        <li>
+          When configuring a gateway account it's possible to set DCC for non-payment card methods, and it won't actually work, because the code
+          checks the card's BIN, so for non-payment card methods, the DCC selection will be auto-skipped.
+        </li>
+        <li>
+          We were experimenting with DCC markup and set it as 0. We were able to save those settings, but when we went to edit gateway account
+          screen again, DCC offer settings checkbox was unchecked - it was not obvious behavior.
+        </li>
+        <img src="/src/assets/p14-2.png" alt="">
+        <li>
+          It's possible to set a negative DCC markup in gateway account settings and it's not obvious how it works. There's
+          no documentation example or explanation about this case.
+        </li>
+        <li>
+          When we were updating the gateway account settings, sometimes on our first deposit attempt the payment instruments
+          would crash with "No payment instrument available" message - we couldn't reproduce this bug properly.
+        </li>
+        <li>
+          The amount calculation process was not very obvious for us, it would be good to have an explanation in the documentation,
+          or some tooltip with the calculation logic somewhere in the DCC-related timeline message.
+        </li>
+        <li>
+          We tried to calculate the quote amount manually, but the result we got didn't fully match the number displayed in Recomm. Probably
+          because of rounding.
+        </li>
+      </ul>
+    </li>
+  </ul>
 
+  <h3>Project 13</h3>
+  <ul>
     <li>
       What made you smile?
-      <p>it's great we have this feature of adding a consent check: <a
-          href="https://www.rebilly.com/docs/dev-docs/setup-rebilly-instruments-consent-check">https://www.rebilly.com/docs/dev-docs/setup-rebilly-instruments-consent-check</a>
-        , which makes it easy to add consent check to the payment flow</p>
+      <p>It was clear for us what needs to be done for this project, because it was similar to project 12</p>
     </li>
     <li>
       What did you find confusing? Did you encounter any issues?
       <ul>
-        <li>The doc mentions adding `showConsentCheck: ['form']` to enable this feature, which is not right, also need
-          the `i18n` option like this
-          <pre>
-  i18n: {
-    en: {
-      consentCheck: {
-        agreeToTOS: 'I agree to the Terms of Service and the Privacy Policy',
-      },
-    },
-  },
-  features: {
-    showConsentCheck: ['confirmation'],
-  },
-        </pre>
+        <li>
+          It's not possible to limit what payment methods should be displayed in Rebilly Instruments - all payment methods
+          that are set in all available gateway accounts will be shown here. For orgs that have a lot of gateway accounts,
+          it's only possible to limit payment methods in the Instruments by creating a separate website.
+          It would be good to enhance Deposits API to add "paymentMethods" to limit available payment methods.
         </li>
-        <li>just like other examples, I hope there is an example to preview, for example like this one: <a
-            href="https://www.rebilly.com/docs/dev-docs/update-rebilly-instruments">https://www.rebilly.com/docs/dev-docs/update-rebilly-instruments</a>
+        <li>
+          There's nothing in the documentation about how payment method choices are displayed (it was not obvious for us
+          that they are picked from all available gateway accounts)
+        </li>
+        <li>
+          No code examples for setting up a custom payment method - https://www.rebilly.com/docs/dev-docs/setup-rebilly-instruments-paypal
+        </li>
+        <li>
+          In PayPal payment method code examples, there are a lot of unrelated payment methods (AliPay, etc) - https://www.rebilly.com/docs/dev-docs/setup-rebilly-instruments-paypal
+        </li>
+        <li>
+          We couldn't style "Deposit amount" text in the Instruments form. We couldn't find the related color option in the
+          documentation
         </li>
       </ul>
-    </li>
-  </ul>
-  <h3>Project 9</h3>
-  <ul>
-    <li>
-      Which teammates executed the project?
-      <p>Bogdan Litsenberger, Junyong Zeng</p>
-    </li>
-    <li>
-      What made you smile?
-      <p>Great we already have checkout page for merchant to use</p>
-    </li>
-    <li>
-      What did you find confusing? Did you encounter any issues?
-      <p>No, we need to create 2 products instead of 1 product, because the `shipping` option is attached to a product,
-        not with a plan. So for the physical product with a shipping rate and the virtual product without a shipping
-        rate, we have to create 2 products.</p>
-    </li>
-  </ul>
-  <h3>Project 10</h3>
-  <ul>
-    <li>
-      Which teammates executed the project?
-      <p>Bogdan Litsenberger, Junyong Zeng</p>
-    </li>
-    <li>
-      What made you smile?
-      <p>Glad we have instruments lib to create such a form</p>
-    </li>
-    <li>
-      What did you find confusing? Did you encounter any issues?
-      <p> We didn't finish this training exactly (100%) like the example</p>
-      <ul>
-        <li>the add-on is shown on the confirmation page(the 2nd page), we have no idea how to move it to the form page(the 1st page)</li>
-        <li>we don't know how to add a seat(firstname + lastname) for more people</li>
-      </ul>
-    </li>
-  </ul>
-  <h3>Project 11</h3>
-  <ul>
-    <li>
-      Which teammates executed the project?
-      <p>Bogdan Litsenberger, Junyong Zeng</p>
-    </li>
-    <li>
-      What made you smile?
-      <p>It seems this training is similar with project 6, we reused the most of the code in project 6</p>
-    </li>
-    <li>
-      What did you find confusing? Did you encounter any issues?
-      <p>Maybe there are 2 bugs: <br>
-        <img src="../assets/project-11-bug.png" alt="">
-      </p>
-    </li>
-  </ul>
-  <h3>Project 12</h3>
-  <ul>
-    <li>
-      Which teammates executed the project?
-      <p>Bogdan Litsenberger, Junyong Zeng</p>
-    </li>
-    <li>
-      What made you smile?
-      <p>It seems this training is similar with project 6, we reused the most of the code in project 6</p>
-    </li>
-    <li>
-      What did you find confusing? Did you encounter any issues?
-      <p>There was an issue with CAD input field in instruments looking squashed when you clear it and re-enter the amount manually<br>
-        <img src="../assets/p12-bug.png" alt="">
-      </p>
-	  <p>Another issue is when you make a deposit transaction and then update Rebilly Instruments without refreshing the page, it causes an error saying that transaction was already completed. We had to destroy Rebilly Instruments instance and mount it again to allow making multiple deposits without refreshing a page.</p>
     </li>
   </ul>
 </template>
@@ -114,3 +80,5 @@ h3, ul {
 }
 </style>
 
+<script setup>
+</script>

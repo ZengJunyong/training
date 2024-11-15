@@ -1,5 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import Project3 from '../views/Project3.vue'
+import Project14 from '../views/Project14.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -7,57 +7,12 @@ const router = createRouter({
     {
       path: '/',
       name: 'home',
-      component: Project3
+      component: Project14
     },
     {
-      path: '/project4',
-      name: 'project4',
-      component: () => import('../views/Project4.vue')
-    },
-    {
-      path: '/project5',
-      name: 'project5',
-      component: () => import('../views/Project5.vue')
-    },
-    {
-      path: '/project6',
-      name: 'project6',
-      component: () => import('../views/Project6.vue')
-    },
-    {
-      path: '/project7',
-      name: 'project7',
-      component: () => import('../views/Project7.vue')
-    },
-    {
-      path: '/project8',
-      name: 'project8',
-      component: () => import('../views/Project8.vue')
-    },
-    {
-      path: '/project9',
-      name: 'project9',
-      component: () => import('../views/Project9.vue')
-    },
-    {
-      path: '/project9-product-page',
-      name: 'project9-product-page',
-      component: () => import('../views/Project9ProductPage.vue')
-    },
-    {
-      path: '/project10',
-      name: 'project10',
-      component: () => import('../views/Project10.vue')
-    },
-    {
-      path: '/project11',
-      name: 'project11',
-      component: () => import('../views/Project11.vue')
-    },
-    {
-      path: '/project12',
-      name: 'project12',
-      component: () => import('../views/Project12.vue')
+      path: '/project14',
+      name: 'project14',
+      component: () => import('../views/Project14.vue')
     },
     {
       path: '/debriefs',

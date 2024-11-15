@@ -1,7 +1,7 @@
 <script setup>
 import RebillyInstruments from '@rebilly/instruments';
 
-const customerId = "cus_01HMW4HF2QMJZ3EJKEQ7T04TFQ";
+const customerId = "test-customer";
 
 (async () => {
   const response = await fetch("https://vercel-fkt1.vercel.app/deposit-usd", {
@@ -22,10 +22,10 @@ const customerId = "cus_01HMW4HF2QMJZ3EJKEQ7T04TFQ";
     },
     jwt: token,
     theme: {
-      colorPrimary: '#504CCA', // Brand color
-      colorText: '#ffffff',
+      colorPrimary: '#5f8667', // Brand color
+      colorText: '#fff',
       colorDanger: '#cd5c5c',
-      colorBackground: '#201F55', // Website background color
+      colorBackground: '#484343', // Website background color
       buttonColorText: '#ffffff',
       fontFamily: 'Trebuchet MS, sans-serif', // Website font family
     },
@@ -72,10 +72,10 @@ async function swtichToCAD() {
     },
     jwt: token,
     theme: {
-      colorPrimary: '#504CCA', // Brand color
-      colorText: '#ffffff',
+      colorPrimary: '#5f8667', // Brand color
+      colorText: '#fff',
       colorDanger: '#cd5c5c',
-      colorBackground: '#201F55', // Website background color
+      colorBackground: '#484343', // Website background color
       buttonColorText: '#ffffff',
       fontFamily: 'Trebuchet MS, sans-serif', // Website font family
     },
@@ -86,7 +86,7 @@ async function swtichToCAD() {
 
 <template>
   <h1>Casino deposit page with strategies (USD and CAD)</h1>
-  <img src="https://funkytravel.ro/wp-content/uploads/2023/12/casino.jpeg" alt="">
+  <img src="/src/assets/logo.jfif" alt="">
   <div style="padding: 40px 0 20px 0">
     <button style="margin-right: 20px;" @click="swtichToUSD()">USD</button>
     <button @click="swtichToCAD()">CAD</button>
@@ -98,9 +98,3 @@ async function swtichToCAD() {
     </div>
   </div>
 </template>
-
-<style scoped>
-.container2 {
-  color: white;
-}
-</style>
